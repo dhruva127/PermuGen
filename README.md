@@ -1,11 +1,11 @@
-# PermuGen 🔥
+# BruteForge 🔥
 
 **High-performance permutation-based wordlist generator**
 
-PermuGen is a fast, flexible, and memory-efficient **command-line wordlist generator written in Python**.
+BruteForge is a fast, flexible, and memory-efficient **command-line wordlist generator written in Python**.
 It generates permutation-based wordlists from custom character sets and supports **Unicode**, **streaming output**, and **automatic file splitting** for large datasets.
 
-Designed for **security researchers, developers, and educators**, PermuGen can generate extremely large wordlists without consuming excessive system memory.
+Designed for **security researchers, developers, and educators**, BruteForge can generate extremely large wordlists without consuming excessive system memory.
 
 ---
 
@@ -17,7 +17,6 @@ Designed for **security researchers, developers, and educators**, PermuGen can g
 ![Status](https://img.shields.io/badge/status-active-success)
 
 ---
-
 
 # Features
 
@@ -44,21 +43,21 @@ Designed for **security researchers, developers, and educators**, PermuGen can g
 ## Clone the repository
 
 ```bash
-git clone https://github.com/dhruva127/PermuGen
-cd permugen
+git clone https://github.com/dhruva127/bruteforge.git
+cd bruteforge
 ```
 
 ## Run the script
 
 ```bash
-python permugen.py
+python bruteforge.py
 ```
 
 or make it executable:
 
 ```bash
-chmod +x permugen.py
-./permugen.py
+chmod +x bruteforge.py
+./bruteforge.py
 ```
 
 ---
@@ -85,7 +84,7 @@ No external packages required.
 Generate permutations using characters **abc** with length **2**:
 
 ```bash
-python permugen.py --chars abc --min-len 2 --max-len 2 --stdout
+python bruteforge.py --chars abc --min-len 2 --max-len 2 --stdout
 ```
 
 Output:
@@ -117,7 +116,7 @@ cb
 Example:
 
 ```bash
-python permugen.py --lower --digits
+python bruteforge.py --lower --digits
 ```
 
 ---
@@ -147,7 +146,7 @@ Example:
 Example:
 
 ```bash
-python permugen.py --lower --digits --output wordlist.txt
+python bruteforge.py --lower --digits --output wordlist.txt
 ```
 
 ---
@@ -178,7 +177,7 @@ Large outputs can be automatically split.
 Example:
 
 ```bash
-python permugen.py --lower --digits --output words.txt --split-lines 100000
+python bruteforge.py --lower --digits --output words.txt --split-lines 100000
 ```
 
 Generated files:
@@ -196,7 +195,7 @@ words_0003.txt
 ## Simple permutations
 
 ```bash
-python permugen.py --chars abc --min-len 2 --max-len 2 --stdout
+python bruteforge.py --chars abc --min-len 2 --max-len 2 --stdout
 ```
 
 ---
@@ -204,7 +203,7 @@ python permugen.py --chars abc --min-len 2 --max-len 2 --stdout
 ## Generate passwords with letters and numbers
 
 ```bash
-python permugen.py --lower --digits --min-len 4 --max-len 4 --output passwords.txt
+python bruteforge.py --lower --digits --min-len 4 --max-len 4 --output passwords.txt
 ```
 
 ---
@@ -212,7 +211,7 @@ python permugen.py --lower --digits --min-len 4 --max-len 4 --output passwords.t
 ## Generate complex wordlist
 
 ```bash
-python permugen.py --lower --upper --digits --symbols --min-len 6 --max-len 6 --output list.txt
+python bruteforge.py --lower --upper --digits --symbols --min-len 6 --max-len 6 --output list.txt
 ```
 
 ---
@@ -220,14 +219,14 @@ python permugen.py --lower --upper --digits --symbols --min-len 6 --max-len 6 --
 ## Generate large dataset with splitting
 
 ```bash
-python permugen.py --lower --digits --min-len 5 --max-len 5 --output data.txt --split-lines 500000
+python bruteforge.py --lower --digits --min-len 5 --max-len 5 --output data.txt --split-lines 500000
 ```
 
 ---
 
 # How It Works
 
-PermuGen generates **permutations** of characters.
+BruteForge generates **permutations** of characters.
 
 Permutation means:
 
@@ -291,7 +290,7 @@ stdout      file writer
 
 # Performance
 
-PermuGen is optimized for **large wordlists**:
+BruteForge is optimized for **large wordlists**:
 
 * uses **generators (`yield`)**
 * does **not store results in memory**
@@ -300,7 +299,6 @@ PermuGen is optimized for **large wordlists**:
 
 This allows generation of **millions or billions of permutations** without exhausting system memory.
 
----
 
 
 ---
@@ -318,4 +316,3 @@ See the `LICENSE` file for details.
 This tool is intended for **educational purposes, security research, and testing** only.
 
 Do not use generated wordlists for unauthorized access or illegal activities.
-
