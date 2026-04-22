@@ -1,5 +1,15 @@
 # BruteForge 🔥
 
+<p align="center">
+  <img src="/logo.png" width="350">
+</p>
+
+<h1 align="center">BruteForge</h1>
+
+<p align="center">
+High-performance permutation-based wordlist generator
+</p>
+
 **High-performance permutation-based wordlist generator**
 
 BruteForge is a fast, flexible, and memory-efficient **command-line wordlist generator written in Python**.
