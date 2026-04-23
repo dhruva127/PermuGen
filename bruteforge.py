@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/env python3
 """Permutation-based wordlist generator with Unicode support."""
 
